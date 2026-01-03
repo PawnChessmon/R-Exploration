@@ -25,19 +25,14 @@ Outputs are written to `output_step2a` and either `output_step2b` (pvalue) or `o
 ## Sample Outputs
 
   ### PCA
-  ![PCA plot](docs/images/pca_samples.png)
+  ![PCA plot](sample_images/boxplots_top10.png)
 
   ### Heatmap
-  ![Heatmap of top DE genes](docs/images/heatmap_top_degenes.png)
+  ![Heatmap of top DE genes](sample_images/boxplots_top10.png)
 
-  ### Volcano (gut vs duct)
-  ![Volcano plot](docs/images/volcano_de_gut_duct.png)
-
-  ### MA (gut vs duct)
-  ![MA plot](docs/images/ma_de_gut_duct.png)
 
   ### Boxplots (Top 10 DE genes)
-  ![Boxplots of top DE genes](docs/images/boxplots_top10.png)
+  ![Boxplots of top DE genes](sample_images/boxplots_top10.png)
 
 
 
