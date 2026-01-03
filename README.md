@@ -1,5 +1,18 @@
 # Rexploration Omega
 
+```mermaid
+flowchart TD
+  A["Input tables"] --> B["DESeq2 model"]
+  B --> C["DE tables: step2a"]
+  B --> D["Scaled matrix (VST + z-score)"]
+  D --> E["PCA"]
+  D --> F["Heatmap of top DE genes"]
+  B --> G["Volcano plots"]
+  B --> H["MA plots"]
+  D --> I["Boxplots: top 10 DE genes"]
+  B --> J["Top 10 up/down lists"]
+```
+
 ## TL;DR
 - Run with p-values:
   - `nextflow run main.nf --pcol pvalue --pthresh 0.01 --lfc 1`
@@ -36,18 +49,7 @@ When `--pcol padj`:
 - `--input_dir` : input directory (default `input`)
 - `--outdir` : output directory (default `.`)
 
-```mermaid
-flowchart TD
-  A["Input tables"] --> B["DESeq2 model"]
-  B --> C["DE tables: step2a"]
-  B --> D["Scaled matrix (VST + z-score)"]
-  D --> E["PCA"]
-  D --> F["Heatmap of top DE genes"]
-  B --> G["Volcano plots"]
-  B --> H["MA plots"]
-  D --> I["Boxplots: top 10 DE genes"]
-  B --> J["Top 10 up/down lists"]
-```
+
 
 
 ## Run locally
