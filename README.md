@@ -21,6 +21,26 @@ flowchart TD
 
 Outputs are written to `output_step2a` and either `output_step2b` (pvalue) or `output_step2c` (padj).
 
+
+## Sample Outputs
+
+  ### PCA
+  ![PCA plot](docs/images/pca_samples.png)
+
+  ### Heatmap
+  ![Heatmap of top DE genes](docs/images/heatmap_top_degenes.png)
+
+  ### Volcano (gut vs duct)
+  ![Volcano plot](docs/images/volcano_de_gut_duct.png)
+
+  ### MA (gut vs duct)
+  ![MA plot](docs/images/ma_de_gut_duct.png)
+
+  ### Boxplots (Top 10 DE genes)
+  ![Boxplots of top DE genes](docs/images/boxplots_top10.png)
+
+
+
 ## Overview
 This pipeline runs DESeq2 on the provided experiment inputs, filters non-finite values, produces DE tables, PCA, heatmap, volcano/MA plots, boxplots, and top-10 up/down tables. It enforces the sample group order `gut -> duct -> node`.
 
