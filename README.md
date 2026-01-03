@@ -14,25 +14,41 @@ flowchart TD
 ```
 
 ## TL;DR
+- Input expected under `input/`: `em.csv` (tab-delimited counts, first column `ID`), `sample_sheet.csv` (`SAMPLE`, `SAMPLE_GROUP`), `annotations.csv` (`Gene ID`, `Associated Gene Name`).
+- Flags:
+  - `--pcol` : which significance column to use (`pvalue` or `padj`)
+  - `--pthresh` : significance threshold (default `0.01`)
+  - `--lfc` : absolute log2 fold-change cutoff (default `1`)
 - Run with p-values:
   - `nextflow run main.nf --pcol pvalue --pthresh 0.01 --lfc 1`
 - Run with adjusted p-values:
   - `nextflow run main.nf --pcol padj --pthresh 0.05 --lfc 1`
+- Output:
+  - Tables in `output_step2a`
+  - Plots in `output_step2b` (pvalue) or `output_step2c` (padj)
+
 
 Outputs are written to `output_step2a` and either `output_step2b` (pvalue) or `output_step2c` (padj).
 
 
 ## Sample Outputs
 
-  ### PCA
-  ![PCA plot](sample_images/pca_degenes.png)
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="sample_images/pca_samples.png" width="520" alt="PCA plot">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="sample_images/heatmap_top_degenes.png" width="380" alt="Heatmap of top DE genes">
+    </td>
+    <td align="center">
+      <img src="sample_images/boxplots_top10.png" width="380" alt="Boxplots (Top 10 DE genes)">
+    </td>
+  </tr>
+</table>
 
-  ### Heatmap
-  ![Heatmap of top DE genes](sample_images/heatmap_top_degenes.png)
-
-
-  ### Boxplots (Top 10 DE genes)
-  ![Boxplots of top DE genes](sample_images/boxplots_top10.png)
 
 
 
