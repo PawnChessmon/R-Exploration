@@ -36,6 +36,7 @@ When `--pcol padj`:
 - `--input_dir` : input directory (default `input`)
 - `--outdir` : output directory (default `.`)
 
+```mermaid
 flowchart TD
   A["Input tables"] --> B["DESeq2 model"]
   B --> C["DE tables: step2a"]
@@ -46,6 +47,7 @@ flowchart TD
   B --> H["MA plots"]
   D --> I["Boxplots: top 10 DE genes"]
   B --> J["Top 10 up/down lists"]
+```
 
 
 ## Run locally
