@@ -25,10 +25,10 @@ Outputs are written to `output_step2a` and either `output_step2b` (pvalue) or `o
 ## Sample Outputs
 
   ### PCA
-  ![PCA plot](sample_images/boxplots_top10.png)
+  ![PCA plot](sample_images/pca_degenes.png)
 
   ### Heatmap
-  ![Heatmap of top DE genes](sample_images/boxplots_top10.png)
+  ![Heatmap of top DE genes](sample_images/heatmap_top_degenes.png)
 
 
   ### Boxplots (Top 10 DE genes)
