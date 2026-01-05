@@ -1,4 +1,4 @@
-# Rexploration Omega
+# Rexploration Omega (demo features)
 
 ## TL;DR
 - Run with p-values:
