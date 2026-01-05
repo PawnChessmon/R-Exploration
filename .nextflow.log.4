@@ -1,0 +1,91 @@
+Jan-05 14:22:25.694 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf --input_type de_tables --de_tables sample_input/de_duct_vs_gut.csv,sample_input/de_node_vs_duct.csv
+Jan-05 14:22:25.743 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.7
+Jan-05 14:22:25.759 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/ritupam/.nextflow/plugins; core-plugins: nf-amazon@2.15.0-patch1,nf-azure@1.16.0-patch1,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4-patch1,nf-wave@1.12.1
+Jan-05 14:22:25.772 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jan-05 14:22:25.773 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jan-05 14:22:25.775 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jan-05 14:22:25.782 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jan-05 14:22:25.796 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/ritupam/Desktop/2_Rexploration_alpha/nextflow.config
+Jan-05 14:22:25.797 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/ritupam/Desktop/2_Rexploration_alpha/nextflow.config
+Jan-05 14:22:25.816 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/ritupam/.nextflow/secrets/store.json
+Jan-05 14:22:25.818 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@77c7ed8e] - activable => nextflow.secret.LocalSecretsProvider@77c7ed8e
+Jan-05 14:22:25.825 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jan-05 14:22:26.081 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Jan-05 14:22:26.090 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [berserk_ekeblad] DSL2 - revision: b8d09fa8d5
+Jan-05 14:22:26.091 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jan-05 14:22:26.091 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jan-05 14:22:26.129 [main] DEBUG nextflow.Session - Session UUID: 2e91cfc9-0ecc-4818-9656-27e349ba2cff
+Jan-05 14:22:26.129 [main] DEBUG nextflow.Session - Run name: berserk_ekeblad
+Jan-05 14:22:26.129 [main] DEBUG nextflow.Session - Executor pool size: 10
+Jan-05 14:22:26.134 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jan-05 14:22:26.137 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=30; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jan-05 14:22:26.165 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.7 build 5955
+  Created: 08-09-2025 13:29 UTC (18:59 IDT)
+  System: Mac OS X 26.3
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 17.0.10+7
+  Encoding: UTF-8 (UTF-8)
+  Process: 4743@Ritupams-MacBook-Pro.local [127.0.0.1]
+  CPUs: 10 - Mem: 16 GB (234.8 MB) - Swap: 3 GB (1.3 GB)
+Jan-05 14:22:26.173 [main] DEBUG nextflow.Session - Work-dir: /Users/ritupam/Desktop/2_Rexploration_alpha/work [Mac OS X]
+Jan-05 14:22:26.174 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/ritupam/Desktop/2_Rexploration_alpha/bin
+Jan-05 14:22:26.181 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jan-05 14:22:26.187 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jan-05 14:22:26.190 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jan-05 14:22:26.205 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jan-05 14:22:26.211 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 11; maxThreads: 1000
+Jan-05 14:22:26.245 [main] DEBUG nextflow.Session - Session start
+Jan-05 14:22:26.369 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jan-05 14:22:26.429 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jan-05 14:22:26.430 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-05 14:22:26.433 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jan-05 14:22:26.436 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=10; memory=16 GB; capacity=10; pollInterval=100ms; dumpInterval=5m
+Jan-05 14:22:26.438 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jan-05 14:22:26.451 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'DESEQ2_ANALYSIS': maxForks=0; fair=false; array=0
+Jan-05 14:22:26.480 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: DESEQ2_ANALYSIS
+Jan-05 14:22:26.482 [main] DEBUG nextflow.Session - Igniting dataflow network (1)
+Jan-05 14:22:26.482 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DESEQ2_ANALYSIS
+Jan-05 14:22:26.482 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_715d954d89058d78: /Users/ritupam/Desktop/2_Rexploration_alpha/main.nf
+Jan-05 14:22:26.482 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jan-05 14:22:26.482 [main] DEBUG nextflow.Session - Session await
+Jan-05 14:22:26.549 [Actor Thread 3] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /Users/ritupam/Desktop/2_Rexploration_alpha/input -- Cause: java.nio.file.NoSuchFileException: /Users/ritupam/Desktop/2_Rexploration_alpha/input
+Jan-05 14:22:26.590 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-05 14:22:26.592 [Task submitter] INFO  nextflow.Session - [56/43b8c1] Submitted process > DESEQ2_ANALYSIS (deseq2)
+Jan-05 14:22:29.826 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: DESEQ2_ANALYSIS (deseq2); status: COMPLETED; exit: 1; error: -; workDir: /Users/ritupam/Desktop/2_Rexploration_alpha/work/56/43b8c171b670b2f12396425e5f1cb8]
+Jan-05 14:22:29.827 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=30; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jan-05 14:22:29.833 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=DESEQ2_ANALYSIS (deseq2); work-dir=/Users/ritupam/Desktop/2_Rexploration_alpha/work/56/43b8c171b670b2f12396425e5f1cb8
+  error [nextflow.exception.ProcessFailedException]: Process `DESEQ2_ANALYSIS (deseq2)` terminated with an error exit status (1)
+Jan-05 14:22:29.844 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'DESEQ2_ANALYSIS (deseq2)'
+
+Caused by:
+  Process `DESEQ2_ANALYSIS (deseq2)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  Rscript /Users/ritupam/Desktop/2_Rexploration_alpha/scripts/run_deseq2.R     --input_dir input     --output_base .     --input_type de_tables     --de_tables sample_input/de_duct_vs_gut.csv,sample_input/de_node_vs_duct.csv     --pcol pvalue     --pthresh 0.01     --lfc 1
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  Error in find_input("em\\.csv$") : 
+    Expected 1 file for pattern em\.csv$, found 0
+  Execution halted
+
+Work dir:
+  /Users/ritupam/Desktop/2_Rexploration_alpha/work/56/43b8c171b670b2f12396425e5f1cb8
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+Jan-05 14:22:29.849 [TaskFinalizer-1] DEBUG nextflow.Session - Session aborted -- Cause: Process `DESEQ2_ANALYSIS (deseq2)` terminated with an error exit status (1)
+Jan-05 14:22:29.849 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jan-05 14:22:29.862 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jan-05 14:22:29.862 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jan-05 14:22:29.869 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=3.2s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Jan-05 14:22:30.074 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jan-05 14:22:30.082 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

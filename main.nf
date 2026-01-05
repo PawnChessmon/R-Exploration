@@ -15,12 +15,15 @@ process DESEQ2_ANALYSIS {
   path "output_step2a"
   path "output_step2b", optional: true
   path "output_step2c", optional: true
+  path "output_step2d", optional: true
 
   script:
   """
   Rscript ${projectDir}/scripts/run_deseq2.R \
     --input_dir ${input_dir} \
     --output_base . \
+    --input_type ${params.input_type} \
+    --de_tables ${params.de_tables} \
     --pcol ${params.pcol} \
     --pthresh ${params.pthresh} \
     --lfc ${params.lfc}
