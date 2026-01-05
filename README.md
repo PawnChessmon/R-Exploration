@@ -55,7 +55,7 @@ When `--input_type de_tables` and expression inputs are available:
 flowchart TD
   A[Input tables] --> B[DESeq2 model]
   B --> C[DE tables: step2a]
-  B --> D[Scaled matrix (VST + z-score)]
+  B --> D["Scaled matrix (VST + z-score)"]
   D --> E[PCA]
   D --> F[Heatmap of top DE genes]
   B --> G[Volcano plots]
