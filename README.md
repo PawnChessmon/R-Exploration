@@ -21,6 +21,25 @@ flowchart TD
   - `nextflow run main.nf --pcol padj --pthresh 0.05 --lfc 1`
 - Run using existing DE tables:
   - `nextflow run main.nf --input_type de_tables --de_tables "sample_input/de_duct_vs_gut.csv,sample_input/de_node_vs_duct.csv" --input_dir sample_input`
+ 
+
+## Sample Outputs
+
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="sample_images/pca_samples.png" width="520" alt="PCA plot">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="sample_images/heatmap_top_degenes.png" width="380" alt="Heatmap of top DE genes">
+    </td>
+    <td align="center">
+      <img src="sample_images/boxplots_top10.png" width="380" alt="Boxplots (Top 10 DE genes)">
+    </td>
+  </tr>
+</table>
 
 Outputs are written to `output_step2a` and either `output_step2b` (pvalue) or `output_step2c` (padj).
 When `--input_type de_tables` and expression inputs are also present, plots go to `output_step2c` (pvalue) or `output_step2d` (padj).
