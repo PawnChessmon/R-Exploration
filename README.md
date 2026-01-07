@@ -1,4 +1,4 @@
-# Rexploration Omega
+# Rexploration
 
 ```mermaid
 flowchart TD
